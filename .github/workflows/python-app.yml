@@ -40,6 +40,7 @@ jobs:
         path: ./dist/windows/ddsclobber.exe
 
   release:
+    needs: build
     runs-on: ubuntu-latest
     steps:
     - name: Create Draft Release
