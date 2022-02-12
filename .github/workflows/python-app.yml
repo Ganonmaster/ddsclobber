@@ -69,9 +69,9 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./latest-build
-        asset_name: ddsclobber.zip
-        asset_content_type: application/zip
+        asset_path: ./ddsclobber.exe
+        asset_name: ddsclobber.exe
+        asset_content_type: application/octet-stream
 
     - uses: eregon/publish-release@v1
       env:
