@@ -34,3 +34,7 @@ jobs:
         path: . # default is src
         # Specify a file path for .spec file
         spec: ddsclobber.spec # optional, default is 
+    - uses: actions/upload-artifact@v2
+      with:
+        name: latest-build
+        path: ./dist/windows/ddsclobber.exe
